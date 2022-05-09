@@ -5,6 +5,10 @@
 
 }
 
+html{
+    font-size:100%;
+}
+
 *{
     margin:0;
     padding:0;
@@ -29,7 +33,7 @@ h2{
 
 p{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--black-txt);
     margin:0 auto;
     padding:20px;
@@ -44,7 +48,7 @@ div.row{
 
 div div{
     width:80%;
-    border: .5em solid var(--black-txt);
+    border: .25rem solid var(--black-txt);
     margin-bottom:30px;
     position: relative;
     margin-right: auto;
@@ -66,7 +70,7 @@ h4.white-bg{
     padding: 5px 10px;
     background: var(--white-bg);
     border-style: solid;
-    border-width: 0 0 .2em .2em;
+    border-width: 0 0 .125rem .125rem;
     border-color: red;
 }
 
@@ -113,11 +117,11 @@ h4.white-bg{
         margin: 2.5% auto;
 
     }
-    p, p:nth-child(3){
-        font-size:1.3rem;
+    p{
+        font-size:1.125rem;
     }
     h2{
-        font-size:2.5rem;
+        font-size:3rem;
     }
 
     .row{
