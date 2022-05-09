@@ -1,6 +1,7 @@
 :root{
-    --bg: black;
+    --bg: rgb(155, 216, 245);
     --white-bg: #f7f7f7;
+    --black-txt: black;
 
 }
 
@@ -8,11 +9,12 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    
 }
 
 body{
     background: var(--bg);
-    font-family:'Montserrat Alternate', sans-serif;
+    font-family:'Montserrat Alternates', sans-serif;
     height:auto;
     width:auto;
 }
@@ -22,13 +24,13 @@ h2{
     font-size: 2.5rem;
     text-align:center;
     margin: 10vh 0;
-    color: var(--white-bg);
+    color: var(--black-txt);
 }
 
 p{
-    font-family: 'Montserrat Alternate', sans-serif;
-    font-size: 1.5rem;
-    color: var(--white-bg);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.5em;
+    color: var(--black-txt);
     margin:0 auto;
     padding:20px;
     font-weight:500;
@@ -43,23 +45,25 @@ div.row{
 div div{
     width:80%;
     height:40vh;
-    border: .5em solid white;
+    border: .5em solid var(--black-txt);
     margin-bottom:30px;
     position: relative;
     margin-right: auto;
     margin-left: auto;
+    padding-top:40px;
 }
 
 h4.white-bg{
     position:absolute;
     display: inline-block;
-    width:30%;
+    width:40%;
     text-align:center;
     top:0;
     right:0;
     font-family:'Lilita One', 'Cursive';
     font-size: 1.5rem;
-    color: var(--bg);
+    font-weight:400;
+    color: var(--black-txt);
     padding: 5px 10px;
     background: var(--white-bg);
     border-style: solid;
@@ -73,12 +77,24 @@ h4.white-bg{
         height:50%;
         float:left;
         padding:40px 20px;
+        
+    }
+    h2{
+        font-size:3.5rem;
     }
     
+    p{
+        font-size:1.5rem;
+    }
+
    .row div:nth-child(3){
         margin-right:2.5%;
         margin-left:2.5%;
     }
+    .row{
+        padding-left:5%;
+    }
+   
 } 
 
 @media (min-width:768px) and (max-width: 991px){
@@ -86,22 +102,33 @@ h4.white-bg{
         width: 45%;
         padding: 30px;
         float:left;
+    }
+
+    .col-md-6:nth-child(2){
         margin-right:5%;
     }
 
+    .col-md-6:nth-child(-n+3) {
+        height:50vh;
+    }
     .col-md-12{
         width:95%;
         padding:30px;
         float:left;
         margin: 2.5% auto;
+        height:30vh;
+
+    }
+    p{
+        font-size:1.3rem;
+    }
+    h2{
+        font-size:
     }
 
     .row{
-        margin-right: 2.5%;
-    margin-left: 2.5%;
+        padding-right: auto;
+        padding-left: 5%;
+    
     }
-    /*div.row{
-        padding:
-    }*/
-
 }
