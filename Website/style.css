@@ -44,7 +44,6 @@ div.row{
 
 div div{
     width:80%;
-    height:50vh;
     border: .5em solid var(--black-txt);
     margin-bottom:30px;
     position: relative;
@@ -74,7 +73,6 @@ h4.white-bg{
 @media (min-width: 992px) {
     .col-lg-4{
         width:30%;
-        height:50%;
         float:left;
         padding:40px 20px;
         
@@ -109,7 +107,7 @@ h4.white-bg{
     }
 
     .col-md-6:nth-child(-n+3) {
-        height:50vh;
+       /* height:50vh;*/
     }
     .col-md-12{
         width:95%;
