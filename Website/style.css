@@ -44,7 +44,7 @@ div.row{
 
 div div{
     width:80%;
-    height:40vh;
+    height:50vh;
     border: .5em solid var(--black-txt);
     margin-bottom:30px;
     position: relative;
